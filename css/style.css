@@ -1,0 +1,1508 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*===============
+base
+=================*/
+html{}
+body{
+	font-family: "Montserrat","meiryo","メイリオ","ms pgothic","ms pゴシック",osaka,sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 1.4;
+	background: #fff;}
+a:link,a:visited,a:active{
+	color: #000;
+	text-decoration: none;}
+a:hover{
+	color: #000;
+	text-decoration: underline;}
+	
+input,select{ font-size: 120%; padding: 5px 10px; }
+	
+/*==================
+#wrapper
+====================*/
+#wrapper{
+/*	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #fff;*/}
+#wrapper_inner{}
+	
+/*===========================================
+▼▼▼ヘッダー部分▼▼▼
+=============================================*/	
+#header{}
+	#header_inner{
+	width: 1000px;
+	margin: auto;}
+	#header_title{
+		padding: 10px 0px;
+		text-align: center;}
+		#header_title img{}
+	#header_description {
+		display: none;}
+		
+/*==================
+▽ナビゲーション
+====================*/
+#nav_box{
+	background: #fff;}
+	#nav_box_inner{
+		width: 1000px;
+		margin: auto;}
+	#nav{
+		margin: auto;}
+	
+/*===========================================
+▼▼▼メインイメージ▼▼▼
+=============================================*/	
+.mainimg {
+	background: url(../img/mainimg_bg5.jpg) center -20px repeat-x;
+	width: 100%; }
+	.mainimg_inner{
+		width: 1000px;
+		margin: auto;}
+		
+/*▽下層*/
+.conte .mainimg{
+	padding: 60px 0px 65px;
+	overflow: hidden;
+	color: #fff;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);}
+	.conte .mainimg .ttl{
+		width: 50%;
+		float: left;}
+	.conte .mainimg .ttl .en{
+		display: block;
+		font-size: 220%;
+		text-transform: uppercase;}
+	.conte .mainimg .ttl .jp{
+		display: block;}
+	.conte .mainimg .txt{
+		width: 50%;
+		float: right;
+		padding-top:20px;
+		text-align: right;}
+
+	
+/*==================
+▽contents
+====================*/		
+#contents{}
+#contents_inner{
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;}
+
+/*===========================================
+▼▼▼メイン部分▼▼▼
+=============================================*/
+#main{} 
+#main_inner{
+	padding: 50px 0px 0px;}
+	
+.conte #main{
+	float: none;
+	width: 1000px !important;
+	margin: auto;}
+
+.col_one #main{
+	float: none;
+	width: 1000px !important;
+	margin: auto;}
+
+/*===========================================
+▼▼▼共通▼▼▼
+=============================================*	
+/*PCwidth100*/
+.pcimg100{
+    display: block;
+    max-width: 100% !important;
+	height: auto !important;}
+	
+/*▽タイトル*/
+.title{
+	margin-bottom: 30px;
+	background: linear-gradient(transparent 60%, #0096ff 0%);}
+.title .ttl{
+	font-size: 220%;
+	text-transform: uppercase;}
+.title .s_ttl{
+	display: inline-block;
+	margin-left: 10px;}
+	
+/*▽ライン*/
+.line{
+	background: linear-gradient(transparent 60%, #ffff66 60%);}
+	
+/*▽PDFダウンロード*/
+.pdf_dl{
+	border: 1px solid #666;
+	padding: 10px 5px 10px 15px;
+	margin-bottom: 20px;
+	overflow: hidden;}
+	.pdf_dl .ico{
+		float: left;
+		display:block;
+		width: 100px;
+		text-align: center;
+		padding: 5px 10px 5px;
+		margin: 0px 10px 0px 0px;
+		color: #fff;
+		font-size: 70%;
+		background: #C00;}
+	.pdf_dl .ttl{
+		display:block;
+		overflow: hidden;}
+		
+/*▽youtube*/
+.youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	margin: 0px auto 20px;
+	text-align: center;}
+	.youtube iframe {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100% !important;
+		height: 100% !important;}
+
+/*▽ページ送り*/
+#pagenav {
+	position: relative;
+	overflow: hidden;}
+	#pagenav ul {
+		position: relative;
+		left: 50%;
+		float: left;
+		margin: 0 0 20px;
+		padding: 0px;}
+	#pagenav ul li {
+		background: none;
+		position: relative;
+		left: -50%;
+		float: left;
+		margin: 0px 5px 5px 0px;}
+	#pagenav li span,
+	#pagenav li a {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1; 
+		text-decoration: none;
+		padding: 0px 20px;
+		/*width: 30px;*/
+		line-height: 30px;
+		text-align: center;
+		background: rgba(255,255,255,0.6);
+		color: #000;
+		border-radius: 15px; 
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px; }
+		#pagenav li a:hover {
+			color: #fff;
+			background: #666;}
+		#pagenav li .cr {
+			color: #fff;
+			background: #666;}
+			
+/*▽前のページに戻る*/
+.page_back{
+	text-align: center;}
+	.page_back a{
+		display: block;
+		width: 300px;
+		background: #666;
+		cursor: pointer;
+		border: 0 none;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		margin: 0px auto 20px;
+		padding: 15px 0px;}
+	.page_back a:hover{
+		color: #000;
+		background: #ffff00;}
+	
+/*▽ボタン*/
+button {
+	cursor: pointer;
+	border: 0 none; 
+	color: #ffffff;
+	background:#666666;
+    border-radius: 5px;
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	margin: 0px 0px 0px 0px;
+	padding: 15px 100px;}
+	button:hover {
+		color: #fff;
+		background:#0096ff;}
+
+/*==============================
+　▽通常記事
+================================*/
+.archive_standard{}
+.entry_header{
+	font-size: 180%;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	padding: 0px 0px 0px 0px;
+	color: #0096ff;
+	/*color: #0096ff;*/
+	margin-bottom: 25px;
+	text-align: center;
+	font-weight: bold;
+	}
+	.entry_header a{ color: #0096ff; font-weight: bold; }
+.entry_body{
+	padding: 0px 0px 30px 0px;
+	overflow: hidden;}
+	.entry_body a{ text-decoration: underline; }
+	.entry_body a:hover{ text-decoration: none; }
+	.entry_body p, .entry_body h1, .entry_body h2, .entry_body h3, .entry_body h4, .entry_body h5, .entry_body h6, .entry_body ul, .entry_body ol, .entry_body table{
+		
+		clear: both;
+	margin-bottom: 25px;}
+	.entry_body h1, .entry_body h2, .entry_body h3{
+		font-size: 130%;
+		font-weight: bold;}
+	.entry_body h4, .entry_body h5, .entry_body h6{
+		font-size: 120%;
+		font-weight: bold;}
+	.entry_body p{
+		line-height: 1.8;}
+.entry_img img{
+	max-width: 100% !important;
+	height: auto !important;
+	display: block;
+	margin: 0px auto 20px;}		
+.entry_body img{
+	max-width: 100% !important;
+	height: auto !important;
+	display: block;
+	margin: auto;}
+	
+.entry_body h2{
+	color: #fff;
+	background: #666;
+    padding: 10px 10px 10px 20px;}	
+.entry_body h3 {
+	color: #000;
+	border-left: 10px solid #eee;
+    padding: 5px 10px 5px 15px;}
+.entry_body h4 {
+    padding: 10px 10px 10px 20px;
+	border:2px solid #666;
+	color: #000;
+	background: #f6f6f6;}	
+.entry_body h5 {
+	color: #fff;
+	background: #666;
+    padding: 10px 10px 10px 20px;}	
+.entry_body h6 {
+    padding: 3px 10px 3px 5px;
+	color: #c00;
+	font-size: 130%;
+	font-weight: bold;}	
+
+.entry_body .table1 table{
+	border: 1px solid #666;}
+	.entry_body .table1 th{
+		width: 160px;
+		padding: 10px 10px;
+		border: 1px solid #666;
+		background: #f6f6f6;
+		text-align: center;
+		vertical-align: top;}
+	.entry_body .table1 td{
+		border: 1px solid #666;
+		padding: 10px 10px;}
+	
+.entry_body ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);}
+.entry_body ol li{
+    position: relative;
+    display: block;
+    padding: 10px 0px 11px 35px;
+    text-decoration: none;
+    transition: all .3s ease-out;}
+.entry_body ol li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: 0px;
+	top: 5px;
+	background: #0096ff;
+    height: 1.8em;
+    width: 1.8em;
+    line-height: 1.8em;
+    text-align: center;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+	color: #fff;}
+	
+.entry_body ul {
+	border-top: 1px solid #ddd;}
+	.entry_body ul li {
+		position: relative;
+		padding: 10px 10px 11px 40px;
+		line-height: 1.2;
+		border-bottom: 1px solid #ddd;}
+	.entry_body ul li::after,
+	.entry_body ul li::before {
+		display: block;
+		content: '';
+		position: absolute;}
+	.entry_body ul li::after {
+		top: 10px;
+		left: 10px;
+		height: 1.3em;
+		width: 1.3em;
+		line-height: 2em;
+		background: #666;
+		border-radius: 100%;}
+	.entry_body ul li::before {
+		z-index: 2;
+		top: 16px;
+		left: 16px;
+		width: 4px;
+		height: 4px;
+		border-right: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);}
+		
+.entry_body blockquote{
+	margin: 30px 40px;
+	padding: 0 35px;
+	position: relative; }
+	.entry_body blockquote:before{
+		content:"“";
+		font-size: 500%;
+		line-height:1em;
+		color:#999;
+		position:absolute;
+		left:0;
+		top:-10px; }
+
+.entry_body .btn a{
+	display: block;
+	margin-top: 25px;
+	padding: 6px 0px;
+	text-align: center;
+	font-size: 80%;
+	font-weight: bold;
+	color: #fff;
+	background: #666;
+	letter-spacing: 0.2em;}
+	.entry_body .btn a:hover{
+		color: #000;
+		background: #0096ff;
+		text-decoration: none;}
+		
+/*==============================
+　▽WordPress カスタムフィールド Googleマップ
+================================*/
+.acf-map {
+	width: 100%;
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: 20px 0;}
+	/* fixes potential theme css conflict */
+	.acf-map img {
+	   max-width: inherit !important;}
+
+/* ソーシャルボタン プラグイン */
+.wp_social_bookmarking_light{
+    border: 0 !important;
+    padding: 10px 15px 0 !important;
+    margin: 0 !important;
+    background: #eee;
+    overflow: hidden;}
+	.wp_social_bookmarking_light div{
+		float: left !important;
+		border: 0 !important;
+		padding: 0 !important;
+		margin: 0 5px 0px 0 !important;
+		min-height: 30px !important;
+		line-height: 18px !important;
+		text-indent: 0 !important;}
+	.wp_social_bookmarking_light img{
+		border: 0 !important;
+		padding: 0;
+		margin: 0;
+		vertical-align: top !important;}
+	.wp_social_bookmarking_light_clear{
+		clear: both !important;}
+	#fb-root{
+		display: none;}
+	.wsbl_twitter{
+		width: 60px;}
+	.wsbl_twitter .twitter-share-button{
+		text-indent: -8888px;
+		padding: 1px 7px;
+		background: #00acee; 
+		border-radius: 2px;
+		-webkit-border-radius: 2px;    /* Safari,Google Chrome用 */  
+		-moz-border-radius: 2px;   /* Firefox用 */
+		color: #fff;}
+	.wsbl_facebook_like iframe{
+		max-width: none !important;}
+	.wsbl_pinterest a{
+		border: 0px !important;}
+
+/*==============================
+　▽カレンダー
+================================*/
+
+/*▽カレンダータイトル*/
+.calendar-caption{
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+	font-size: 120%;
+	color: #fff;
+	background: #666;
+	font-size: 160% !important;
+	position: relative;
+	line-height: 50px;}
+	.calendar-caption .monthly-prev-prev,
+	.calendar-caption .monthly-prev-next{
+		font-size: 70%;
+		line-height: 30px !important;}
+	.monthly-prev-next{
+		margin-top: -30px !important;}
+		.monthly-prev-next > div{
+			background: #f6f6f6;
+			padding: 5px 20px 5px 20px;
+	border-radius: 25px; 
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;}
+		.monthly-prev-next .monthly-prev{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: #000;}
+		.monthly-prev-next .monthly-next{
+			position: absolute;
+			top: 10px;
+			right: 10px;}
+		
+/*▽カレンダー*/
+	.monthly-calendar table,
+	.mix-calendar table,
+	.timetable-calendar table,
+	.multiple-calendar table{
+		margin-top: 10px;
+		width: 100%;
+		margin-bottom: 20px;
+		border-bottom:#ddd solid 1px !important;
+		border-right:#ddd solid 1px !important;}
+	.monthly-calendar th,
+	.monthly-calendar td,
+	.mix-calendar th,
+	.mix-calendar td,
+	.timetable-calendar th,
+	.timetable-calendar td,
+	.multiple-calendar th,
+	.multiple-calendar td{
+		padding: 10px 15px 10px 15px;
+		border-top:#ddd solid 1px !important;
+		border-left:#ddd solid 1px !important;
+		vertical-align: top;
+		line-height: 1.2;}
+	.monthly-calendar th,
+	.mix-calendar th,
+	.timetable-calendar th,
+	.multiple-calendar th{
+		width: 14%;}
+	/*曜日*/	
+	.header-row th{
+		text-align: center;
+		padding: 10px;
+		font-weight: bold;}
+	.monthly-calendar th.week-title,
+	.mix-calendar th.week-title,
+	.timetable-calendar th week-title,
+	.multiple-calendar th week-title{
+		padding: 10px 10px 10px 10px;
+		background: #f6f6f6;
+		text-align: center;}
+	/*日にち*/	
+	.monthly-calendar .day-number,
+	.mix-calendar .day-number,
+	.timetable-calendar .day-number,
+	.multiple-calendar .day-number{
+		margin-bottom: 5px;
+		font-size: 120%;
+		font-weight: bold;}
+	/*予約可*/
+	.monthly-calendar .calendar-mark a,
+	.mix-calendar .calendar-mark a,
+	.timetable-calendar .calendar-mark a,
+	.multiple-calendar .calendar-mark a{
+		display: inline-block; 
+		color: #000;
+		/*background: #0096ff;*/
+		/*border-radius: 5px;*/
+		font-size: 100%;
+		/*padding: 5px 5px 5px 5px;*/
+		margin-left: -5px;}
+		.monthly-calendar .calendar-mark a:hover,
+		.mix-calendar .calendar-mark a:hover,
+		.timetable-calendar .calendar-mark a:hover,
+		.multiple-calendar .calendar-mark a:hover{
+			color: #000;}
+			.calendar-time-mark,
+			.schedule-note{ line-height: 1.6; }
+			.time-string{ margin-right: 5px; }
+	/*満員の時　base.jsと併用*/
+	.monthly-calendar .calendar-mark .full,
+	.mix-calendar .calendar-mark .full,
+	.timetable-calendar .calendar-mark .full,
+	.multiple-calendar .calendar-mark .full{
+		display: inline-block; 
+		color: #fff;
+		background:#0096ff;
+		border-radius: 5px;
+		font-size: 100%;
+		padding: 5px 5px 5px 5px;
+		margin-left: -5px;}
+		
+		.calendar-marking{
+			display: block;
+			margin-bottom: 10px;}
+		
+	/*日曜日*/
+	.header-row th:nth-child(1),		
+	.week-row td:nth-child(1){
+		background: #FFEEF4;}
+	/*土曜日*/
+	.header-row th:nth-child(7),		
+	.week-row td:nth-child(7){
+		background: #EAF5FF;}
+	/*定休日*/		
+	.week-row td.off{
+		background: #f6f6f6;}
+	/*赤*/		
+	.week-row td.red{
+		background: #FFEEF4;}
+	/*青*/		
+	.week-row td.blue{
+		background: #EAF5FF;}
+	/*緑*/		
+	.week-row td.green{
+		background: #CCFFCC;}
+	/*黄*/		
+	.week-row td.yellow{
+		background: #FFFFCC;}
+		
+		
+		
+/* カレンダーその他 */
+	.mtssb-timetable-link{}
+		.mtssb-timetable-link caption:before{
+			display: block;
+			content:"ご予約内容";
+			background: #666;
+			padding: 7px 15px;
+			margin-bottom: 15px;
+			color: #fff;}
+		.mtssb-timetable-link caption{
+			padding: 10px 0;
+			font-size: 120%; }
+			.mtssb-timetable-name{ display: inline-block; margin-right: 8px; }
+				.mtssb-timetable-name:after{ content:"｜"; }
+			.mtssb-timetable-date{ display: inline-block; }
+			
+	/* フォーム */
+	.unit-price{ padding: 10px 0; }
+				
+	/* 残席数を「残り」と「人」 */
+		a.calendar-daylink .calendar-marking:before,
+		a.booking-timelink .calendar-marking:before,
+		.booking-timelink:before,
+		.list-monthly-calendar .calendar-mark a:before{
+			content:'残り ';
+		}
+		a.calendar-daylink .calendar-marking:after,
+		a.booking-timelink .calendar-marking:after,
+		.booking-timelink:after,
+		.list-monthly-calendar .calendar-mark a:after {
+			content:' 人';
+		}
+	/* エラーメッセージ */
+	.error-message{ color: #f30; font-size: 120%; }
+
+	/* 利用規約 */
+	#terms-conditions{ margin-bottom: 10px; color: #FF3300; }
+	#accedence-box{
+		border: #ccc solid 1px;
+		padding: 15px; 10px;
+		margin-bottom: 15px; }
+	
+	/* ボタン */
+	.mtssb-daily-action,
+	#action-button{ text-align: center; }
+			
+/*▽活動詳細*/
+.day-calendar table:last-child{
+	border-bottom:#ddd solid 1px !important;
+	border-right:#ddd solid 1px !important;}
+	.day-calendar th,
+	.day-calendar td{
+		padding: 10px 10px 10px 10px;
+		border-top:#ddd solid 1px !important;
+		border-left:#ddd solid 1px !important;}
+	.day-calendar .calendar-mark a{
+		display: inline-block;
+		text-align: center; 
+		color: #fff;
+		background: #0096ff;
+		border-radius: 5px;
+		font-size: 80%;
+		padding: 10px 10px 10px 10px;
+		margin-left: -5px;
+		text-decoration: none;}
+		.day-calendar .calendar-mark a:hover{
+			color: #0096ff;
+			background: #ddd;}
+		
+/*▽予約フォーム*/
+/*▽予約の確認キャンセル*/		
+#booking-form,
+#booking-reservation-fieldset{}
+	#booking-form table,
+	#booking-reservation-fieldset table,
+	.content-form table table{
+		margin-top: 10px;
+		width: 100%;}
+		#booking-form table:last-child,
+		#booking-reservation-fieldset table:last-child,
+		.content-form table table:last-child{
+			border-bottom:#ddd solid 1px !important;
+			border-right:#ddd solid 1px !important;}
+		#booking-form th,
+		#booking-form td,
+		#booking-reservation-fieldset th,
+		#booking-reservation-fieldset td,
+		.content-form table table th,
+		.content-form table table td{
+			padding: 20px 20px 20px 20px;
+			border-top:#ddd solid 1px !important;
+			border-left:#ddd solid 1px !important;
+			vertical-align: middle;}
+		#booking-form th,
+		#booking-reservation-fieldset th,
+		.content-form table table th{
+			background: #f6f6f6;
+			width: 200px;}
+			
+			.content-form .subscription-title{
+				font-size: 120%;
+				margin-right: 20px; }
+				.content-form #subscription-cancel-button {
+					background: #666;
+					border: 0 none;
+					border-radius: 5px;
+					color: #ffffff;
+					cursor: pointer;
+					font-size: 100%;
+					letter-spacing: 0.1em;
+					margin: 0;
+					padding: 10px 50px; }
+				.content-form .closed_reception{
+					display: inline-block;
+					background: #ddd;
+					border-radius: 5px;
+					color: #ff0000;
+					letter-spacing: 0.1em;
+					margin: 0;
+					padding: 10px 50px;}
+				
+	/*タイトル*/		
+	#booking-form legend,
+	#booking-reservation-fieldset legend{
+		color: #000;
+		border-left: 10px solid #eee;
+		padding: 5px 10px 5px 15px;
+		font-size: 120%;
+		font-weight: bold !important;
+		text-align: left;
+		width: 100%;
+		display: block !important;
+		margin-bottom: 5px;}
+	/*テキストエリアサイズ*/	
+	#booking-note{
+		width:100% !important;}
+	#client-company,#client-email,#client-email2,#client-address1,#client-address2{
+		width:100% !important;}
+
+	#booking-form .required,
+	#booking-reservation-fieldset .required{
+		color: #ff0000;}
+		
+	#mining-form #action-button{
+		margin-bottom: 20px !important;}
+	
+
+/*==============================
+　▽お問い合わせ
+================================*/
+.mailform {}
+.mailform .att{
+	margin-bottom:20px;
+	border: 1px solid #666;
+	padding: 10px 20px;}
+	.mailform .att span{
+		color: #ff0000;
+		font-weight: bold;}
+.mailform .table1 table{
+	border-left: none !important;
+	border-right: none !important;}
+	.mailform .table1 th{
+		text-align: left;
+		border-left: none !important;
+		border-right: none !important;}
+	.mailform .table1 td{
+		border-left: none !important;
+		border-right: none !important;}
+.mail_buttons{
+	text-align: center;}
+.must{
+	float: right !important;
+	color: rgba(255,51,0,1) !important;}	
+.mailform textarea ,.mailform input ,.mailform select{
+    border: 1px solid #aaa;
+	padding: 1px 4px 1px 5px;}
+.mailform textarea{
+	width: 100% !important;}
+.mailform .wpcf7-submit{
+	width: 50%; 
+	padding: 7px;}
+	.mailform .wpcf7-submit:hover{ background: #666; color: #fff;}
+.mailform .screen-reader-response,
+.mailform .wpcf7-response-output{ padding: 8px 0; color: rgba(255,51,0,1); }
+	.mailform .screen-reader-response ul{ display: none !important; }
+	.mailform .wpcf7-not-valid-tip{ color: rgba(255,51,0,1); font-size: 80%; }
+	.mailform .wpcf7-not-valid-tip:before{ content:'  ※'; }
+	
+	.screen-reader-response{ display: none; }
+/*===========================================
+　▽実績
+=============================================*/
+.case{}
+/*▽ボックス横並びタイプ２*/
+/*▽3カラムから1カラムリスト*/		
+.box_type2{}
+.box_type2 ul{
+	overflow: hidden;}
+.box_type2 li{
+	float: left;
+	width: 33.3%;
+	padding: 0px 20px 20px 20px;}
+.box_type2 li:nth-child(3n+1) {
+	clear: both;/*3つごとフロート解除*/}
+.box_type2 li .img{
+	margin-bottom: 10px;}
+.box_type2 li .ttl{
+	margin-bottom: 10px;
+	font-weight: bold;}
+.box_type2 li .txt{
+	margin-bottom: 10px;
+	font-size: 80%;}
+
+/*▽1カラム画像リスト*/
+.box_type3{}
+.box_type3 ul{
+	border-top: 1px solid #999;
+	padding-top: 10px;}
+.box_type3 li{
+	padding: 0px 0px 20px 0px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #999;}
+.box_type3 li .img{
+	float: left;
+	width: 20%;
+	margin-right: 20px;}
+.box_type3 li .ttl{
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 120%;}
+.box_type3 li .txt{
+	margin-bottom: 10px;}
+.box_type3 li .btn a{
+	display: block;
+	margin-top: 25px;
+	padding: 6px 0px;
+	text-align: center;
+	font-size: 80%;
+	font-weight: bold;
+	color: #fff;
+	background: #666;
+	letter-spacing: 0.2em;}
+	.box_type3 li .btn a:hover{
+		color: #000;
+		background: #0096ff;
+		text-decoration: none;}
+
+
+/*===========================================
+▼▼▼サイド部分▼▼▼
+=============================================*/
+.conte #side{
+	float: right;
+	width: 250px;
+	padding-top: 20px;}
+	
+/*▽サイド検索フォーム*/
+.side_searchform{
+	padding: 10px 10px 10px 10px;
+	background: #f6f6f6;
+	border-top: none;
+	text-align: center;}
+	.side_searchform input[type="text"] {
+		width: 70%;
+		padding: 4px 4px;}
+	.side_searchform input[type="submit"] {
+		border : none;  
+		padding: 4px 10px;  
+		font-weight: bold;  
+		cursor: pointer;
+		color: #fff;
+		background: #666;
+		border: 1px solid #000;}
+	.side_searchform input[type="submit"]:hover {
+		color: #000;
+		background: #ffff00;
+		border: 1px solid #000;}
+	
+/*▽サイドメニュー*/
+.side_menu{
+	background: #fff;
+	margin-bottom: 20px;}
+	.side_ttl{
+		padding: 7px 0px 6px;
+		color: #0096ff;
+		text-align: center;
+		font-size: 120%;
+		border-bottom: 2px solid #0096ff;}
+	.side_ttl span{
+		display: inline-block;
+		margin-left: 10px;
+		font-size: 80%;
+		margin-top: 2px;}
+	.side_menu ul{
+		border-top: 1px solid #0096ff;}
+	.side_menu li a{
+		display: block;
+		border-bottom: 1px dashed #0096ff;
+		padding: 10px 10px 10px 10px;
+		color: #000;}
+	li:last-child a{
+		border-bottom-style: solid;}
+	.side_menu li a:hover{
+		background: #f6f6f6;}
+	.side_menu li .cr{
+		background: #f6f6f6;}
+		
+/*▽サイド会社概要情報*/
+.side_conpany{
+	padding: 20px 20px 20px 20px;
+	color: #333333;
+	background: #f6f6f6;
+	text-align: center;}
+	.side_conpany .f1{
+		font-size: 160%;
+		letter-spacing: 0.1em;}
+	.side_conpany .f2{
+		margin-top: -4px;
+		margin-bottom: 5px;}
+	.side_conpany .f3{
+		font-size: 160%;
+		margin-bottom: 5px;
+		color: #0096ff;}
+	.side_conpany .f4{
+		margin-bottom: 10px;}
+	.side_conpany .f5 a{
+		display: block;
+		padding: 5px 0px;
+		color: #fff;
+		background: #0096ff;}
+	.side_conpany .f5 a:hover{
+		color: #0096ff;
+		background: #fff;
+		text-decoration: none;}
+
+	
+/*===========================================
+▼▼▼トップページ▼▼▼
+=============================================*/
+/*▽ボックス横並びタイプ１*/
+/*▽4カラムから2カラム*/		
+.box_type1{}
+.box_type1 ul{
+	overflow: hidden;}
+.box_type1 li{
+	float: left;
+	width: 25%;
+	padding: 0px 20px 20px 20px;}
+.box_type1 li:nth-child(4n+1) {
+	clear: both;/*４つごとフロート解除*/}
+.box_type1 li .img{
+	margin-bottom: 10px;}
+.box_type1 li .ttl{
+	margin-bottom: 10px;
+	font-weight: bold;}
+.box_type1 li .txt{
+	margin-bottom: 10px;
+	font-size: 80%;}
+
+/*▽トッピックスリスト*/
+.topics_list{
+	margin-bottom: 20px;}
+.topics_list ul{
+	border-top: 1px solid #ccc;}
+.topics_list li{
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px solid #ccc;
+	line-height: 1.6;}
+.topics_list .day{
+	display: inline-block;
+	padding-right: 10px;}
+.topics_list .txt{
+	margin-right: 10px;
+	padding: inline-block;}
+.topics_list .ico{
+	display: inline-block;
+	color: #fff;
+	font-size: 80%;
+	padding: 2px 10px;}
+	.topics_list .ico_t{
+		background: #666;}
+	.topics_list .ico_n{
+		background: #666;}
+
+
+		
+/*===========================================
+▼▼▼フッター▼▼▼
+=============================================*/
+#footer{
+	clear: both;}
+#footer_inner{
+	overflow: hidden;
+	width: 1000px;
+	margin: auto;}
+/*コピーライト*/
+#copyright{
+	background: #0096ff;
+	text-align: center;
+	font-size: 80%;
+	color: #fff;
+	line-height: 40px;}
+/*フッターメニュー*/
+#foot_menu{
+	font-size: 90%;
+	text-align: center;
+	margin-bottom: 30px;}
+		#foot_menu li{
+		display: inline-block;}
+	#foot_menu li a{
+		display: block;
+		padding: 10px 10px 10px 10px;}
+/*ページトップ*/
+#page_top{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background: #0096ff;}
+
+	
+/*=ＰＣ表示=*/
+@media only screen and (min-width: 737px) {
+.mobi_only{
+	display: none;}}
+
+/*=スマホ表示=*/	
+@media only screen and (max-width: 736px) {
+#wrapper{
+	position: relative;}
+	
+/*===========================================
+▼▼▼ヘッダー部分▼▼▼
+=============================================*/		
+#header{}
+	#header_inner{}
+	 
+/*==================
+▽ナビゲーション
+====================*/		
+#nav_box{
+	float: none;
+	width: auto;
+	text-align: right;
+	background: none;
+	top: 0px;}
+#nav{
+	width: auto !important;
+	max-width: 100% !important;
+	margin: auto;
+	background: #fff;}
+ .mobi_logo{
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 height: 60px;}
+ .mobi_logo img{
+	 max-height: 100%;
+	 width: auto;}
+
+/*===========================================
+▼▼▼メインイメージ▼▼▼
+=============================================*/
+/*▽トップ*/	
+.mainimg {}
+	.mainimg_inner{}
+/*▽下層*/
+.conte .mainimg{
+	padding: 10px 0px 10px;
+	overflow: hidden;
+	text-align: center;}
+	.conte .mainimg .ttl{}
+	.conte .mainimg .ttl .en{
+		display: block;
+		font-size: 160%;}
+	.conte .mainimg .ttl .jp{
+		display: block;}
+	.conte .mainimg .txt{
+		padding-top: 5px;
+		font-size: 80%;}
+	
+/*==================
+▽contents
+====================*/		
+#contents{
+	overflow: hidden;}
+#contents_inner{}
+
+/*===========================================
+▼▼▼メイン部分▼▼▼
+=============================================*/
+#main{} 
+#main_inner{
+	padding: 10px 10px 0px;}
+
+/*▽下層*/
+.conte .mainimg{
+	padding: 10px 10px 15px;
+	text-align: center;}
+	.conte .mainimg .ttl{
+		width: 100%;
+		float: none;}
+	.conte .mainimg .ttl .en{
+		text-transform: uppercase;}
+	.conte .mainimg .ttl .jp{
+		display: block;}
+	.conte .mainimg .txt{
+		width: 100%;
+		float: none;
+		padding-top:10px;
+		text-align: center;}
+
+
+/*===========================================
+▼▼▼共通▼▼▼
+=============================================*/ 
+.pc_only{
+	display: none;}
+.w100{
+	float: none !important;
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+	clear: both !important;
+	margin: auto;}
+.img100{
+    display: block;
+    max-width: 100% !important;
+	height: auto !important;}
+.br{display: block;}
+.tel-link {
+    color: #06F;
+    font-size: 16px;
+    font-weight: bold;}
+		
+/*▽タイトル*/
+.title{
+	margin-bottom: 10px;
+	background: linear-gradient(transparent 60%, #ff0 0%);
+	text-align: center;}
+.title .ttl{
+	display: block;
+	font-size: 160%;
+	text-transform: uppercase;}
+.title .s_ttl{
+	display: block;
+	margin-left: 10px;}
+	
+/*▽PDFダウンロード*/
+.pdf_dl{
+	border: 1px solid #156cb6;
+	padding: 10px 10px 10px ;
+	margin-bottom: 10px;
+	text-align: center;}
+	.pdf_dl .ico{
+		float: none;
+		width: 100%;
+		margin: 0px 0px 10px;
+		display: block;
+		padding: 10px 10px 10px;
+		font-size: 100%;}
+	.pdf_dl .ttl{
+		display:block;
+		overflow: hidden;
+		text-align: left;}
+		
+/*▽テーブル*/		
+.tb_mb th,.tb_mb td{
+	width: 100% !important;
+	text-align: center;
+	display:block;}
+	
+/*▽ページ送り*/
+#pagenav {}
+	#pagenav ul {
+		margin: 0 0 10px;}
+			
+/*▽前のページに戻る*/
+.page_back{}
+	.page_back a{
+		margin: 0px auto 0px;
+		padding: 10px 0px;}
+	
+/*==============================
+　▽通常記事
+================================*/
+.archive_standard{}
+.entry_header{
+	font-size: 120%;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 3px solid #000;
+	margin-bottom: 10px;
+	font-weight: bold;}
+.entry_body{
+	padding: 0px 0px 10px 0px;}
+	.entry_body p, .entry_body h1, .entry_body h2, .entry_body h3, .entry_body h4, .entry_body h5, .entry_body h6, .entry_body ul, .entry_body ol, .entry_body table{
+	margin-bottom: 10px;}
+	.entry_body h1, .entry_body h2, .entry_body h3{
+		font-size: 110%;}
+	.entry_body h4, .entry_body h5, .entry_body h6{
+		font-size: 110%;}
+	.entry_body p{
+		line-height: 1.5;}
+		
+.archive_standard img{}
+	
+.entry_body h2{
+    padding: 10px 10px 10px 10px;}	
+.entry_body h3 {
+    padding: 10px 10px 10px 10px;}
+.entry_body h4 {
+    padding: 10px 10px 10px 10px;
+	border:1px solid #000;}	
+.entry_body h5 {
+    padding: 10px 10px 10px 10px;}	
+.entry_body h6 {
+    padding: 3px 10px 3px 5px;
+	font-size: 110%;}
+	
+.entry_body .table1 table{}
+	.entry_body .table1 th{
+	width: auto !important;
+	width: 100% !important;
+	text-align: center;
+	display:block;}
+	.entry_body .table1 td{
+	width: 100% !important;
+	text-align: left;
+	display:block;}	
+	
+/*==============================
+　▽カレンダー
+================================*/
+/*▽カレンダータイトル*/
+.calendar-caption{
+	font-size: 160% !important;
+	position: relative;
+	line-height: 40px;
+	padding: 5px 3px 5px 3px;}
+	.calendar-caption .monthly-prev-prev,
+	.calendar-caption .monthly-prev-next{
+		font-size: 60%;
+		line-height: 20px !important;}
+	.monthly-prev-next{
+		margin-top: -20px !important;}
+		.monthly-prev-next > div{
+			background: #f6f6f6;
+			padding: 5px 10px 5px 10px;}
+		.monthly-prev-next .monthly-prev{
+			top: 10px;
+			left: 10px;}
+		.monthly-prev-next .monthly-next{
+			top: 10px;
+			right: 10px;}
+			
+/*▽カレンダー*/
+.list-monthly-calendar {
+	position: relative;
+	padding-bottom: 0px;}
+.list-monthly-calendar thead th{
+	text-align: center;}
+	.list-monthly-calendar table{
+		margin-top: 10px;
+		width: 100%;
+		margin-bottom: 20px;
+		border-bottom:#ddd solid 1px !important;
+		border-right:#ddd solid 1px !important;}
+		
+	.list-monthly-calendar table tbody{}
+	.list-monthly-calendar table tbody th{
+		width: 15% !important;
+		text-align: center !important;
+		vertical-align: middle;}
+		
+	.list-monthly-calendar th,
+	.list-monthly-calendar td{
+		padding: 10px 15px 10px 15px;
+		border-top:#ddd solid 1px !important;
+		border-left:#ddd solid 1px !important;
+		vertical-align: top;
+		line-height: 1.2;}
+
+	.monthly-calendar td span,
+	.mix-calendar td span,
+	.timetable-calendar td span,{
+		display: block !important;
+		word-wrap: break-word !important;}
+		
+	/*日曜日*/
+	.list-monthly-calendar table .sun{
+		background: #FFEEF4;}
+	/*土曜日*/
+	.list-monthly-calendar table .sat{
+		background: #EAF5FF;}
+	/*定休日*/		
+	.list-monthly-calendar table .off{
+		background: #f6f6f6;}
+	/*赤*/		
+	.list-monthly-calendar table .red{
+		background: #FFEEF4;}
+	/*青*/		
+	.list-monthly-calendar table .blue{
+		background: #EAF5FF;}
+	/*緑*/		
+	.list-monthly-calendar table .green{
+		background: #CCFFCC;}
+	/*黄*/		
+	.list-monthly-calendar table .yellow{
+		background: #FFFFCC;}
+			
+/*▽活動詳細*/
+.day-calendar table:last-child{}
+	.day-calendar th,
+	.day-calendar td{}
+		
+/*▽予約フォーム*/
+/*▽予約の確認キャンセル*/		
+#booking-form{}
+#booking-reservation-fieldset{}
+	#booking-form table,
+	#booking-reservation-fieldset table {
+		margin-top: 5px;}
+		#booking-form table:last-child,
+		#booking-reservation-fieldset table:last-child{}
+		#booking-form th,
+		#booking-form td,
+		#booking-reservation-fieldset th,
+		#booking-reservation-fieldset td{
+			display: block;
+			padding: 20px 20px 20px 20px;}
+		#booking-form th,
+		#booking-reservation-fieldset th{
+			padding: 10px 20px 10px 20px;
+			width: 100%;}
+			
+			.subscription-heade{
+				text-align: center !important;}
+			.content-form .subscription-title{ text-align: center; margin: 0 0 15px; display:block; }
+				.content-form #subscription-cancel-button {
+					width: 100% !important;
+					padding: 10px 100px;
+					margin: 0 auto;
+					display:block; }
+				.content-form .closed_reception{
+					display: block;
+					margin: 0 auto !important;
+					border-radius: 5px;
+					letter-spacing: 0.1em;
+					text-align: center !important;}
+
+/*項目２つのカレンダーのみ*/				
+.list-box {
+	width: 42%;}
+	
+/*==============================
+　▽お問い合わせ
+================================*/
+.mailform{}
+.mailform .wpcf7-submit{ width: 100%; }
+	.mailform input[type="text"] ,
+	.mailform input[type="email"] ,
+	.mailform input[type="tel"]  {
+		 width: 100%;}
+/*==============================
+　▽実績
+================================*/
+.case{}
+/*▽ボックス横並びタイプ２*/
+/*▽3カラムから1カラムリスト*/	
+.box_type2{}
+.box_type2 ul{
+	overflow: hidden;}
+.box_type2 li{
+	float: none;
+	width: 100%;
+	padding: 0px 10px 10px 10px;
+	overflow: hidden;}
+.box_type2 li .img{
+	float: left;
+	width: 20%;
+	margin-bottom: 0px;
+	margin-right: 10px;}
+.box_type2 li .ttl{
+	margin-bottom: 5px;
+	font-weight: bold;}
+.box_type2 li .txt{
+	margin-bottom: 0px;
+	font-size: 80%;}
+	
+/*▽1カラム画像リスト*/
+.box_type3{}
+.box_type3 li{
+	padding: 0px 0px 10px 0px;
+	margin-bottom: 10px;}
+.box_type3 li .img{
+	float: none;
+	width: 60%;
+	margin: 0px auto 10px;}
+.box_type3 li .ttl{
+	font-size: 110%;}
+.box_type3 li .txt{
+	margin-bottom: 5px;
+	font-size: 80%;}
+		
+
+/*===========================================
+▼▼▼サイド部分▼▼▼
+=============================================*/
+#side{
+	padding-top: 0px;}
+#side_inner{
+	padding: 0px 10px 0px;}
+	
+
+	
+/*▽サイド検索フォーム*/
+.side_searchform{}	
+	.side_searchform input[type="submit"] {
+		display: block;
+		width: 100%; 
+		padding: 4px 10px;  }
+	
+/*▽サイドメニュー*/
+.side_menu{
+	margin-bottom: 10px;}
+		
+/*▽サイド会社概要情報*/
+.side_conpany{
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;}
+		
+/*===========================================
+▼▼▼トップページ▼▼▼
+=============================================*/
+/*▽ボックス横並びタイプ１*/
+/*▽4カラムから2カラム*/		
+.box_type1{}
+	.box_type1 ul{}
+	.box_type1 li{
+		width: 50%;
+		padding: 0px 10px 10px 10px;}
+	.box_type1 li:nth-child(2n+1) {
+		clear: both;/*４つごとフロート解除*/}
+	.box_type1 li .img{
+		margin-bottom: 5px;}
+	.box_type1 li .ttl{
+		margin-bottom: 5px;}
+	.box_type1 li .txt{
+		margin-bottom: 5px;}
+	
+/*▽トッピックスリスト*/
+.topics_list{
+	margin-bottom: 10px;}
+.topics_list ul{}
+.topics_list li{
+	padding: 0px 10px 10px 10px;}
+.topics_list .day{
+	display: block;
+	padding-right: 0px;
+	padding-bottom: 5px;}
+.topics_list .txt{
+	display: block;
+	padding-right: 0px;
+	padding-bottom: 5px;}
+.topics_list .ico{
+	display: block;
+	color: #fff;
+	font-size: 80%;
+	padding: 2px 10px;
+	text-align: center;}
+
+
+/*===========================================
+▼▼▼フッター▼▼▼
+=============================================*/
+#wrapper{
+	padding-bottom: 50px;}
+#footer{} 
+#footer_inner{}
+/*▼スマホフッターナビ*/
+#foot_nav{
+	position: fixed;
+	width: 100%;
+	left: auto;
+	bottom: 0px;
+	z-index: 100px;
+	overflow: hidden;
+	background: #666;}
+#foot_nav li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	height: 50px;}
+#foot_nav li img{
+	max-height: 100% !important;
+	width: auto;
+	margin: auto;}
+  }

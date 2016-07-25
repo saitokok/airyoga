@@ -1,0 +1,170 @@
+/* Flexnav Base Styles */
+/*=タブレット表示=*/	
+.flexnav {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
+	-webkit-transform-style: preserve-3d;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 0;}
+.flexnav.opacity {
+	opacity: 0; }
+.flexnav.flexnav-show {
+	max-height: 2000px;
+	opacity: 1;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out; }
+/*▼メニュー*/
+.flexnav li {
+	font-size: 100%;
+	position: relative;
+	overflow: hidden;
+	text-align: center !important;}
+	.flexnav li a {
+		position: relative;
+		display: block;
+		padding: 0;
+		z-index: 2;
+		overflow: hidden;
+		color: #fff;/*文字色*/
+		background: #0096ff;/*背景色*/
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);/*ボーダー*/
+		line-height: 50px;/*メニュー幅*/}
+		.flexnav li a:hover{
+			color: #fff;/*文字色*/
+			background: #006fbd;/*背景色*/
+			text-decoration: none;}
+		.flexnav li a.current{/*文字色*/
+			color: #fff;
+			background: #006fbd;/*背景色*/}
+/*▼サブカテ右三角*/
+.flexnav .touch-button {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	width: 50px;/*メニュー幅*/
+	height: 50px;/*メニュー幅*/
+	display: inline-block;
+	background: #004d8e;/*背景色*/
+	text-align: center; }
+	.flexnav .touch-button:hover {
+		cursor: pointer; }
+	.flexnav .touch-button .navicon {
+		position: relative;
+		top: 1.4em;
+		font-size: 12px;
+		color: #fff;/*三角カラー*/}
+/*▼サブメニュー*/
+.flexnav li ul {
+	width: 100%; 
+	background: #666;/*背景色*/
+	overflow: hidden;}
+	.flexnav li ul li {
+		float: left;
+		width: 50%;
+		font-size: 100%;
+		position: relative;
+		overflow: hidden;
+		text-align: center;}
+	.flexnav li ul.flexnav-show li {
+		overflow: visible; }
+	.flexnav li ul li a {
+		display: block;
+		color: #fff;/*文字色*/
+	background: #666;/*背景色*/}
+/*▼メニューボタン*/
+.menu-button {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	height: 60px;/*ヘッダー高さ*/}
+	.menu-button .navicon{
+		display: none;}
+	.menu-button img{
+		display: inline;
+		max-height: 100%;
+		width: auto;
+		text-align: right;}
+
+/*=PC=*/	
+@media all and (min-width: 737px) {
+body.one-page {}
+.flexnav {
+	overflow: visible;
+	margin-left: 4.7%;}
+.flexnav.opacity {
+	opacity: 1; }
+/*▼メニュー*/
+.flexnav li {
+	position: relative;
+	list-style: none;
+	float: left;
+	padding: 0.7% 0.7% 3% 0.7%;
+	display: inline-block;
+	overflow: visible;
+	text-align: center;}
+	.flexnav li a {
+		border-bottom: none;
+		background: none;
+		display: block;
+		line-height: 1.2em;
+		padding: 15px 20px 15px 20px;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all  0.2s ease;
+		color: #fff/*文字色*/;
+		background: #0096ff/*背景色*/;
+	border-radius: 25px; 
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px; }
+	.flexnav li a:hover{
+		color: #fff/*文字色*/;
+		background: #0096ff/*背景色*/;}
+	.flexnav li a.current{
+		color: #fff/*文字色*/;
+		background: #0096ff/*背景色*/;}
+/*▼サブメニュー*/
+.flexnav li > ul {
+	position: absolute;
+	top: auto;
+	left: 0;}
+.flexnav li > ul li {
+	width: 100%;}
+.flexnav li ul li > ul {
+	margin-left: 100%;
+	top: 0;  }
+.flexnav li ul li a {
+	border-right: 1px solid #fff;/*ボーダーカラー*/
+	border-left: 1px solid #fff;/*ボーダーカラー*/
+	border-bottom: 1px solid #fff;/*ボーダーカラー*/
+	padding: 0px 0px 0px 0px;
+	line-height: 50px/*メニュー高さ*/;}
+.flexnav li ul li a:hover{
+	border-bottom: none !important;}
+.flexnav li ul li a.current{
+	border-bottom: none !important;}
+.flexnav li ul.open {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	z-index: 1; }
+.flexnav li ul.open li {
+	overflow: visible;
+	max-height: 100px; }
+.flexnav li ul.open ul.open {
+	margin-left: 100%;
+	top: 0; }
+
+.menu-button {
+	display: none; }
+.flexnav .touch-button {
+	display: none}
+
+}
