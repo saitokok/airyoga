@@ -26,13 +26,13 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'aerial');
+define('DB_NAME', 'db_airyoga');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'aerial');
+define('DB_USER', 'user');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '3RvZB1w4');
+define('DB_PASSWORD', 'pass');
 
 /** MySQL のホスト名 */
 define('DB_HOST', 'localhost');
