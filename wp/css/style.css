@@ -626,20 +626,6 @@ button {
 			
 	/* フォーム */
 	.unit-price{ padding: 10px 0; }
-				
-	/* 残席数を「残り」と「人」 */
-		a.calendar-daylink .calendar-marking:before,
-		a.booking-timelink .calendar-marking:before,
-		.booking-timelink:before,
-		.list-monthly-calendar .calendar-mark a:before{
-			content:'残り ';
-		}
-		a.calendar-daylink .calendar-marking:after,
-		a.booking-timelink .calendar-marking:after,
-		.booking-timelink:after,
-		.list-monthly-calendar .calendar-mark a:after {
-			content:' 人';
-		}
 	/* エラーメッセージ */
 	.error-message{ color: #f30; font-size: 120%; }
 
