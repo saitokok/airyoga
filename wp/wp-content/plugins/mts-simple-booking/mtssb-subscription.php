@@ -778,7 +778,7 @@ class MTSSB_Subscription extends MTSSB_Booking
 			</td>
 			<?php break;
 		case 'tel' : ?><tr>
-			<th><?php echo apply_filters('booking_form_tel', '電話番号') ?></th>
+			<th><?php echo apply_filters('booking_form_tel', '電話番号 -は省略してください') ?></th>
 			<td>
 				<?php echo esc_html($client['tel']) ?>
 			</td>
