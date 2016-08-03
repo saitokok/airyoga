@@ -715,10 +715,6 @@ class MTSSB_Subscription extends MTSSB_Booking
 	{
 		// フォーム並び順配列
 		$column_order = explode(',', $this->reserve['column_order']);
-		if(($key = array_search('tel', $column_order)) !== false) {
-			unset($column_order[$key]);
-		}
-		array_unshift($column_order, "tel");
 ?>
 		<tr>
 			<td class="option-confirm-header" colspan="2"><?php echo apply_filters('booking_form_client_title', 'ご連絡先') ?></td>
