@@ -719,6 +719,7 @@ class MTSSB_Subscription extends MTSSB_Booking
 			unset($column_order[$key]);
 		}
 		array_unshift($column_order, "tel");
+		var_dump($column_order);
 ?>
 		<tr>
 			<td class="option-confirm-header" colspan="2"><?php echo apply_filters('booking_form_client_title', 'ご連絡先') ?></td>
