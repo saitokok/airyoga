@@ -901,8 +901,10 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 		case 'tel' : ?><tr>
 			<th><label for="client-tel"><?php echo apply_filters('booking_form_tel', '電話番号 -は省略してください', 'input'); echo $column_use == 1 ? $this->_require_message() : '' ?></label></th>
 			<td>
+			<form action="cus-search.php" method="post">
 				<input id="client-tel" class="content-text medium" type="text" name="booking[client][tel]" value="<?php echo esc_html($client['tel']) ?>" maxlength="20" />
-				<input type="button" value="検索" >
+				<input type="button" id="cus-search" value="検索" >
+			</form>
 			<?php break;
 		case 'newuse' : ?><tr>
 			<th><label for="client-newuse-yes"><?php echo apply_filters('booking_form_newuse', '新規利用', 'input'); echo $column_use == 1 ? $this->_require_message() : '' ?></label></th>
