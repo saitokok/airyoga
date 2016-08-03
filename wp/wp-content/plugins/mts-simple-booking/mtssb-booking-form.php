@@ -849,6 +849,10 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 	<?php echo apply_filters('booking_form_client_message', '<span class="required">※</span>の項目は必須です。') ?>
 
 	<table>
+		<tr>
+			<th><label for="client-tel"><?php echo apply_filters('booking_form_tel', '電話番号 -は省略してください', 'input'); echo $column_use == 1 ? $this->_require_message() : '' ?></label></th>
+			<td>
+				<input id="client-tel" class="content-text medium" type="text" name="booking[client][tel]" value="<?php echo esc_html($client['tel']) ?>" maxlength="20" />
 	<?php foreach ($column_order as $column) : $column_use = $this->reserve['column'][$column]; if (0 < $column_use) :
 		switch ($column) :
 		case 'company' : ?><tr>
