@@ -894,7 +894,7 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 				<input id="client-address2" class="content-text fat" type="text" name="booking[client][address2]" value="<?php echo esc_html($client['address2']) ?>" maxlength="100" />
 			<?php break;
 		case 'tel' : ?><tr>
-			<th><label for="client-tel"><?php echo apply_filters('booking_form_tel', '電話番号', 'input'); echo $column_use == 1 ? $this->_require_message() : '' ?></label></th>
+			<th><label for="client-tel"><?php echo apply_filters('booking_form_tel', '電話番号 -は省略してください', 'input'); echo $column_use == 1 ? $this->_require_message() : '' ?></label></th>
 			<td>
 				<input id="client-tel" class="content-text medium" type="text" name="booking[client][tel]" value="<?php echo esc_html($client['tel']) ?>" maxlength="20" />
 			<?php break;
