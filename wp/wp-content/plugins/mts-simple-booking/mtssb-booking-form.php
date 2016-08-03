@@ -435,7 +435,7 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 
 		// 電話番号の確認
 		if (0 < $clcols['tel']) {
-			if (!preg_match("/^[0-9]{9}$/", $this->booking['client']['tel'])) {
+			if (!preg_match("/^[0-9]+$/", $this->booking['client']['tel'])) {
 				$this->errmsg['tel'] = $this->_err_message('INVALID_INPUT');
 			}
 		}
