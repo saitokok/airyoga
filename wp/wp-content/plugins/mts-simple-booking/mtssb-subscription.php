@@ -401,11 +401,19 @@ class MTSSB_Subscription extends MTSSB_Booking
 		// 入力データの正規化
 		$reserve_id = trim(mb_convert_kana($_POST['reserve_id'], 'as'));
 		$client_email = trim(mb_convert_kana($_POST['client_email'], 'as'));
+		$client_tel = trim(mb_convert_kana($_POST['client_tel'], 'as'));
 
 		// 予約IDの確認(yymmddxxx)
 		if ($this->_required_check('reserve_id', $reserve_id)) {
 			if (!preg_match("/^[0-9]{9}$/", $reserve_id)) {
 				$this->errmsg['reserve_id'] = $this->_err_message('INVALID_INPUT');
+			}
+		}
+
+		// telの確認
+		if ($this->_required_check('client_tel', $client_tel)) {
+			if (!preg_match("/^[0-9]{9}$/", $client_tel)) {
+				$this->errmsg['client_tel'] = $this->_err_message('INVALID_INPUT');
 			}
 		}
 
