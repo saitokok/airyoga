@@ -843,6 +843,11 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 
 		// フォーム並び順配列
 		$column_order = explode(',', $this->reserve['column_order']);
+		if(($key = array_search('tel', $column_order)) !== false) {
+			unset($column_order[$key]);
+		}
+		array_unshift($column_order, "tel");
+
 ?>
 	<fieldset id="booking_client-fieldset">
 	<legend><?php echo apply_filters('booking_form_client_title', 'ご連絡先', 'input') ?></legend>
