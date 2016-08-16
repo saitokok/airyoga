@@ -903,7 +903,6 @@ class MTSSB_Booking_Form extends MTSSB_Booking
 			<td>
 			<form action="cus-search.php" method="post">
 				<input id="client-tel" class="content-text medium" type="text" name="booking[client][tel]" value="<?php echo esc_html($client['tel']) ?>" maxlength="20" />
-				<input type="button" id="cus-search" value="検索" >
 			</form>
 			<?php break;
 		case 'newuse' : ?><tr>
